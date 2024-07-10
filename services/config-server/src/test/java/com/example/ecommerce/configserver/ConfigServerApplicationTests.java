@@ -1,4 +1,4 @@
-package com.example.ecommerce.config_server;
+package com.example.ecommerce.configserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
