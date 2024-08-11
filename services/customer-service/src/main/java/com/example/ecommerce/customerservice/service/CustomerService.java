@@ -20,10 +20,10 @@ import lombok.RequiredArgsConstructor;
 public class CustomerService {
 
     // Dependency Injection for Repository.
-    private CustomerRepository customerRepository;
+    private final CustomerRepository customerRepository;
 
     // Dependency Injection for Mapper Service Class.
-    private CustomerMapper customerMapper;
+    private final CustomerMapper customerMapper;
 
     // Method to create a new customer entry.
     public String createCustomer(CustomerRequest customerRequestDto) {
