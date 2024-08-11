@@ -7,6 +7,7 @@ import com.example.ecommerce.customerservice.response.CustomerResponse;
 import com.example.ecommerce.customerservice.service.CustomerService;
 
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -21,10 +22,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/api/v1/customer")
 public class CustomerController {
     
-    private CustomerService customerService;
+    private final CustomerService customerService;
 
     @PostMapping
     public ResponseEntity<String> createCustomer(
